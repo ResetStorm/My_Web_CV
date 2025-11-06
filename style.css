@@ -581,8 +581,7 @@ progress::-moz-progress-bar {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -626,7 +625,8 @@ progress::-moz-progress-bar {
 .nombre {
   color: var(--first-color);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
   text-decoration: none;
 
   transition: all 0.7s ease-in-out;
@@ -635,34 +635,21 @@ progress::-moz-progress-bar {
   color: var(--white-color);
 }
 
-.portfolio {
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 90vw);
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.portfolio .curriculum {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  align-content: center;
+  gap: 1rem;
 }
 
 .portfolio-link {
+  text-align: center;
   border: medium solid var(--gray-color);
   border-radius: 10px;
+  padding-bottom: 1rem;
+}
+.portfolio-link1 {
   padding-bottom: 1rem;
 }
 
@@ -713,6 +700,9 @@ progress::-moz-progress-bar {
     -ms-grid-column-span: 2;
     grid-column: span 2;
   }
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 70vw);
+  }
 }
 
 /*media querie para version desktop ancho superior de pantalla a 1024px*/
@@ -744,5 +734,8 @@ progress::-moz-progress-bar {
   .services .section-title {
     -ms-grid-column-span: 3;
     grid-column: span 3;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 60vw);
   }
 }
