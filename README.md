@@ -1,8 +1,8 @@
 ---
-title: Welcome to my web
+title: Welcome to my CV Web
 ---
 
-Hola , aprendiendo HTML y CSS...
+
 
 ## Licencia
 
