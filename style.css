@@ -321,7 +321,7 @@ p {
 
 .menu a {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -625,10 +625,9 @@ progress::-moz-progress-bar {
 .nombre {
   color: var(--first-color);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 1rem;
   text-decoration: none;
-
   transition: all 0.7s ease-in-out;
 }
 .nombre :hover {
@@ -739,3 +738,4 @@ progress::-moz-progress-bar {
     grid-template-columns: repeat(1, 60vw);
   }
 }
+
